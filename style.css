@@ -98,3 +98,8 @@ p {
 
 
 
+.overflow-container {
+    max-height: 300px; /* Set a max height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: add a border for visibility */
+}
