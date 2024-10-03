@@ -31,8 +31,8 @@
         </div>
         <div class="row mb-4">
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/7zGF60kUZo4?autoplay=1&mute=1" title="Silva Hotspring Resort"
-                    frameborder="0"
+                <iframe src="https://www.youtube.com/embed/7zGF60kUZo4?autoplay=1&mute=1&loop=1&playlist=7zGF60kUZo4"
+                    title="Silva Hotspring Resort" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
@@ -52,10 +52,12 @@
                                 <a href="mailto:oquiladave@gmail.com" class="text-decoration-none">
                                     <i class="fa-regular fa-envelope"></i>
                                 </a>
-                                <a href="https://www.facebook.com/DaveOquila" target="_blank" class="text-decoration-none">
+                                <a href="https://www.facebook.com/DaveOquila" target="_blank"
+                                    class="text-decoration-none">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/in/jdoquila/" target="_blank" class="text-decoration-none">
+                                <a href="https://www.linkedin.com/in/jdoquila/" target="_blank"
+                                    class="text-decoration-none">
                                     <i class="fa-brands fa-linkedin"></i>
                                 </a>
                                 <a href="pdf/JDO_RESUME.pdf" class="btn btn-dark" download="Resume">Download
@@ -74,86 +76,107 @@
                     </div>
                 </div>
                 <div class="container">
+                    <!-- Card -->
                     <div class="row no-gutters">
                         <div class="container mb-0">
-                            <div class="d-flex justify-content-center align-items-center icon-button-group">
-                                <div class="card" style="width: 18rem;">
+                            <div class="scroll-container d-flex overflow-auto" style="white-space: nowrap;">
+                                <div class="card mx-2 flex-shrink-0" style="width: 18rem;">
                                     <img src="img/logo/1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-dark">Go somewhere</a>
+                                        <h5 class="card-title text-center">Card title</h5>
+                                        <p class="card-text text-truncate"
+                                            style="white-space: normal; overflow: hidden;">Some quick example text to
+                                            build on the card title and make up the bulk of the card's content.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-dark d-block mx-auto"
+                                            data-bs-toggle="modal" data-bs-target="#modal1">
+                                            Go somewhere
+                                        </button>
                                     </div>
-                                </div> <!-- MESA -->
-                                <div class="card" style="width: 18rem;">
-                                    <img src="img/logo/2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-dark">Go somewhere</a>
-                                    </div>
-                                </div><!-- TAIKOO -->
-                                <div class="card" style="width: 18rem;">
-                                    <img src="img/logo/1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-dark">Go somewhere</a>
-                                    </div>
-                                </div><!-- HIDEOUT -->
-                                <div class="card" style="width: 18rem;">
-                                    <img src="img/logo/2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up
-                                            the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-dark">Go somewhere</a>
-                                    </div>
-                                </div><!-- RANDOM -->
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Bootstrap Carousel -->
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/logo/1.jpg" class="d-block w-100" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/logo/2.jpg" class="d-block w-100" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/logo/3.jpg" class="d-block w-100" alt="Third slide">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <!-- End Carousel -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fade-in-up-on-scroll">
+        <div class="row mb-5">
+            <div class="Title">
+                <div class="text-center-custom">
+                    <h6>About Me</h6>
+                </div>
+            </div>
+            <div class="container">
+                <div class="me">
+                    <div class="row">
+                        <div class="col-6-lg">
+                            <img src="img/Me.jpg" alt="">
+                        </div>
+                        <div class="col-6-lg">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum."
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="fade-in-up-on-scroll">
-            <div class="row mb-5">
-                <div class="Title">
-                    <div class="text-center-custom">
-                        <h6>About Me</h6>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="me">
-                        <div class="row">
-                            <div class="col-6-lg">
-                                <img src="img/Me.jpg" alt="">
-                            </div>
-                            <div class="col-6-lg">
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit
-                                    in
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>~
 
 
